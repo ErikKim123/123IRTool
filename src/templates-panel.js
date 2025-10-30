@@ -37,7 +37,7 @@ export const TemplatesPanel = observer(({ store }) => {
 export const TemplatesSection = {
   name: 'custom-templates',
   Tab: (props) => (
-    <SectionTab name="1도 입장권 시안" {...props}>
+    <SectionTab name="IR 문서" {...props}>
       <MdPhotoLibrary />
     </SectionTab>
   ),

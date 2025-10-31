@@ -1,0 +1,159 @@
+/* ========================================
+   한글 폰트 @font-face 선언
+   Polotno 커뮤니티 기반 핵심 한글 폰트 10개
+   ======================================== */
+
+/* Pretendard 폰트 - 최신 CDN 버전 사용 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/woff2/Pretendard-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* 핵심 한글 폰트 10개 @font-face 등록 (Polotno 커뮤니티 기반) */
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.gstatic.com/s/notosanskr/v36/PbyxFmXiEBPT4ITbgNA5CgmOsn7uwpYi.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.gstatic.com/s/notosanskr/v36/PbykFmXiEBPT4ITbgNA5Cgm-4jvNrQ7j5g.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('https://fonts.gstatic.com/s/nanumgothic/v24/PN_3Rfi-oW3hYwmKDpxS7F_D_9Q.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  src: url('https://fonts.gstatic.com/s/nanumgothic/v24/PN_oRfi-oW3hYwmKDpxS7F_LQv37zl8.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  src: url('https://fonts.gstatic.com/s/nanummyeongjo/v23/9Btx3DZF0dXLMZlywRbVRNhxy1LreHQ.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  src: url('https://fonts.gstatic.com/s/nanummyeongjo/v23/9Bty3DZF0dXLMZlywRbVRNhxy2pXV1A0pAo.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('https://fonts.gstatic.com/s/notoserifkr/v21/3JnmSDn90Gmq2mr3blnHaTZXTihC8O1ZNH1ahck.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('https://fonts.gstatic.com/s/notoserifkr/v21/3JnmSDn90Gmq2mr3blnHaTZXTihC8O11NH1ahck.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  src: url('https://fonts.gstatic.com/s/nanumgothiccoding/v22/8QIVdjzHisX_8vv59_xMxtPFW4IXROjPg4gy.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  src: url('https://fonts.gstatic.com/s/nanumgothiccoding/v22/8QIYdjzHisX_8vv59_xMxtPFW4IXROpW93cxXA.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBM Plex Sans KR';
+  src: url('https://fonts.gstatic.com/s/ibmplexsanskr/v10/vEFM2-VJISZe3O_rc3ZVYh4aTwNOyra_X5zCqmDr.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBM Plex Sans KR';
+  src: url('https://fonts.gstatic.com/s/ibmplexsanskr/v10/vEFM2-VJISZe3O_rc3ZVYh4aTwNOyra_f5_Cqmvc.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('https://fonts.gstatic.com/s/gothica1/v14/CSR74z5ZnPydRjlCCwlCCMcqYtd2vfwk.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gothic A1';
+  src: url('https://fonts.gstatic.com/s/gothica1/v14/CSR44z5ZnPydRjlCCwlCpOYKSPl6tOU9Eg.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Pen Script';
+  src: url('https://fonts.gstatic.com/s/nanumpenscript/v22/daaDSSYiLGqEal3MvdA_FOL_3FkN2z7-aMFCcTU.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nanum Brush Script';
+  src: url('https://fonts.gstatic.com/s/nanumbrushscript/v22/wXK2E2wfpokopxzthSqPbcR5_gVaxazyjqBr1lO97Q.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+

@@ -11,7 +11,7 @@ import { PagesTimeline } from 'polotno/pages-timeline';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { createStore } from 'polotno/model/store';
 // 기본 
-import { DEFAULT_SECTIONS } from 'polotno/side-panel';
+import { DEFAULT_SECTIONS, SectionTab } from 'polotno/side-panel';
 import { TemplatesSection } from './templates-panel';
 
 // import './fonts';
@@ -19,6 +19,40 @@ import { TemplatesSection } from './templates-panel';
 // 한국어 폰트 등록
 import { registerKoreanFonts } from './fonts';
 
+// 섹션 이름 한글 매핑
+const koreanSectionNames = {
+  text: '텍스트',
+  elements: '요소',
+  images: '이미지',
+  background: '배경',
+  backgrounds: '배경',
+  layers: '레이어',
+  filters: '필터',
+  size: '크기',
+  photos: '사진들',
+  templates: '템플릿들',
+  'custom-templates': 'IR 문서',
+  upload: '업로드',
+};
+
+// DEFAULT_SECTIONS를 한글화
+const koreanSections = DEFAULT_SECTIONS.map((section) => {
+  const koreanName = koreanSectionNames[section.name] || section.name;
+  const OriginalTab = section.Tab;
+  
+  return {
+    ...section,
+    Tab: (props) => {
+      if (OriginalTab) {
+        // 원본 Tab 컴포넌트를 렌더링하고 name prop에 한글 이름 전달
+        // 원본 Tab이 SectionTab을 사용한다면 name prop이 적용됨
+        return <OriginalTab {...props} name={koreanName} />;
+      }
+      // 원본 Tab이 없는 경우 SectionTab을 직접 사용
+      return <SectionTab name={koreanName} {...props} />;
+    },
+  };
+});
 
 const store = createStore({
   // this is a demo key just for that project
@@ -38,7 +72,7 @@ registerKoreanFonts(store);
 
 store.addPage();
 
-const sections = [TemplatesSection, ...DEFAULT_SECTIONS];
+const sections = [TemplatesSection, ...koreanSections];
 
 export const App = () => {
   return (
